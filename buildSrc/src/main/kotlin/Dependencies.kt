@@ -3,6 +3,9 @@ object BuildPlugins {
     const val kotlinAndroid = "org.jetbrains.kotlin.android"
     const val navigationSafeArgs = "androidx.navigation.safeargs.kotlin"
     const val kapt = "kapt"
+    const val hiltPlugin = "dagger.hilt.android.plugin"
+    const val spotless = "com.diffplug.spotless"
+    const val detekt = "io.gitlab.arturbosch.detekt"
 }
 
 object AndroidSdk {
@@ -46,6 +49,33 @@ object Libraries {
 
         object Log {
             const val timber = "5.0.1"
+        }
+
+        object DaggerHilt {
+            const val daggerHilt = "2.42"
+        }
+
+        object Retrofit {
+            const val retrofit = "2.9.0"
+            const val moshi = "2.9.0"
+        }
+
+        object Moshi {
+            const val moshi = "1.14.0"
+        }
+
+        object Network {
+            const val okhttp = "4.10.0"
+            const val interceptor = "4.10.0"
+        }
+
+        object Result {
+            const val core = "1.1.16"
+            const val coroutine = "1.1.16"
+        }
+
+        object Linter {
+            const val detekt = "1.21.0"
         }
     }
 
@@ -94,7 +124,49 @@ object Libraries {
         const val timber = "com.jakewharton.timber:timber:${Versions.Log.timber}"
     }
 
+    object DaggerHilt {
+        const val daggerHilt = "com.google.dagger:hilt-android:${Versions.DaggerHilt.daggerHilt}"
+        const val daggerHiltCompiler =
+            "com.google.dagger:hilt-compiler:${Versions.DaggerHilt.daggerHilt}"
+        const val hiltPlugin =
+            "com.google.dagger:hilt-android-gradle-plugin:${Versions.DaggerHilt.daggerHilt}"
+    }
 
+    object Retrofit {
+        const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.Retrofit.retrofit}"
+        const val moshi = "com.squareup.retrofit2:converter-moshi:${Versions.Retrofit.moshi}"
+    }
+
+    object Network {
+        const val okhttp = "com.squareup.okhttp3:okhttp:${Versions.Network.okhttp}"
+        const val interceptor =
+            "com.squareup.okhttp3:logging-interceptor:${Versions.Network.interceptor}"
+    }
+
+    object Moshi {
+        const val moshi = "com.squareup.moshi:moshi-kotlin:${Versions.Moshi.moshi}"
+    }
+
+    object Result {
+        const val core = "com.michael-bull.kotlin-result:kotlin-result:${Versions.Result.core}"
+        const val coroutine =
+            "com.michael-bull.kotlin-result:kotlin-result-coroutines:${Versions.Result.coroutine}"
+    }
+
+    object Linter {
+        const val detekt =
+            "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:${Versions.Linter.detekt}"
+    }
 }
 
-object TestLibraries {}
+object TestLibraries {
+    private object Versions {
+        const val junit = "4.13.2"
+        const val junitExt = "1.1.3"
+        const val espresso = "3.4.0"
+    }
+
+    const val junit = "junit:junit:${Versions.junit}"
+    const val junitExt = "androidx.test.ext:junit:${Versions.junitExt}"
+    const val espresso = "androidx.test.espresso:espresso-core:${Versions.espresso}"
+}

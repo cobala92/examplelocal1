@@ -1,7 +1,10 @@
 plugins {
     id(BuildPlugins.androidApplication)
     id(BuildPlugins.kotlinAndroid)
+    id(BuildPlugins.navigationSafeArgs)
     kotlin(BuildPlugins.kapt)
+    id(BuildPlugins.hiltPlugin)
+    id(BuildPlugins.detekt)
 }
 
 android {
@@ -56,6 +59,35 @@ dependencies {
     implementation(Libraries.AndroidX.Lifecycle.runtime)
     implementation(Libraries.AndroidX.Lifecycle.liveData)
     implementation(Libraries.AndroidX.Lifecycle.viewModel)
+
+    implementation(Libraries.View.material3)
+    implementation(Libraries.Log.timber)
+
+    // Retrofit
+    implementation(Libraries.Retrofit.retrofit)
+    implementation(Libraries.Retrofit.moshi)
+
+    // Moshi
+    implementation(Libraries.Moshi.moshi)
+
+    // Hilt
+    implementation(Libraries.DaggerHilt.daggerHilt)
+    kapt(Libraries.DaggerHilt.daggerHiltCompiler)
+
+    // Coroutine
+    implementation(Libraries.Kotlin.Coroutines.coroutine)
+
+    // Network
+    implementation(Libraries.Network.okhttp)
+    implementation(Libraries.Network.interceptor)
+
+    // Result
+    implementation(Libraries.Result.core)
+    implementation(Libraries.Result.coroutine)
+
+    testImplementation(TestLibraries.junit)
+    androidTestImplementation(TestLibraries.junitExt)
+    androidTestImplementation(TestLibraries.espresso)
 }
 
 kapt {
