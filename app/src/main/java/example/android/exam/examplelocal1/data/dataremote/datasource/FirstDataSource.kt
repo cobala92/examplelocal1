@@ -13,7 +13,8 @@ interface UserRemoteDataSource {
 }
 
 internal class UserRemoteDataSourceImpl @Inject constructor(
-    private val apiService: ApiService, private val appCoroutineDispatchers: AppCoroutineDispatchers
+    private val apiService: ApiService,
+    private val appCoroutineDispatchers: AppCoroutineDispatchers
 
 ) : UserRemoteDataSource {
     override suspend fun getUser(): Result<UserResponse, Throwable> = runSuspendCatching {
