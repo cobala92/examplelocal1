@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "examplelocal1"
-include ':app'
+include(":app")
