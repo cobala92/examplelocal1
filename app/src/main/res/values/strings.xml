@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">examplelocal1</string>
+    <string name="fragment_setting_tv_title">This is Setting Fragment</string>
+    <string name="fragment_login_tv_title">This is LoginFragment</string>
 </resources>
