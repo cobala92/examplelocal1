@@ -1,8 +1,8 @@
-package example.android.exam.examplelocal1.ui.history
+package example.android.exam.examplelocal1.ui.home
 
 import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
 @HiltViewModel
-class HistoryViewModel @Inject constructor() : ViewModel()
+class HomeViewModel @Inject constructor() : ViewModel()

@@ -1,7 +1,6 @@
 package example.android.exam.examplelocal1.ui.main
 
 import android.app.Application
-import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.github.michaelbull.result.fold
@@ -9,7 +8,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import example.android.exam.examplelocal1.R
 import example.android.exam.examplelocal1.data.model.TabMainItem
 import example.android.exam.examplelocal1.data.repository.UserRepository
-import example.android.exam.examplelocal1.ui.history.HistoryFragment
+import example.android.exam.examplelocal1.ui.myword.MyWordFragment
 import example.android.exam.examplelocal1.ui.home.HomeFragment
 import example.android.exam.examplelocal1.ui.setting.SettingFragment
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -62,7 +61,7 @@ class MainViewModel @Inject constructor(
         )
         mainTabs.add(
             TabMainItem(
-                HistoryFragment.newInstance(),
+                MyWordFragment.newInstance(),
                 R.drawable.selector_tab_item_practice,
                 application.getString(R.string.tabLayoutMainSecondTitle)
             )

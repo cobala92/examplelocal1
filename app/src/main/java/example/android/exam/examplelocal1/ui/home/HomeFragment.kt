@@ -6,7 +6,6 @@ import androidx.fragment.app.viewModels
 import dagger.hilt.android.AndroidEntryPoint
 import example.android.exam.examplelocal1.databinding.FragmentHomeBinding
 import example.android.exam.examplelocal1.ui.base.BaseFragment
-import example.android.exam.examplelocal1.ui.setting.SettingViewModel
 
 @AndroidEntryPoint
 class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::inflate) {
@@ -15,7 +14,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
         fun newInstance() = HomeFragment()
     }
 
-    private val viewModel: SettingViewModel by viewModels()
+    private val viewModel: HomeViewModel by viewModels()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel
