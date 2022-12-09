@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">examplelocal1</string>
+    <string name="app_name">ExampleLocal</string>
     <string name="fragment_setting_tv_title">This is Setting Fragment</string>
     <string name="fragment_home_tv_title">This is Home Fragment</string>
     <string name="fragment_myword_tv_title">This is MyWord Fragment</string>
     <string name="tabLayoutMainFirstTitle">Home</string>
-    <string name="tabLayoutMainSecondTitle">My Word</string>
+    <string name="tabLayoutMainSecondTitle">Practice</string>
     <string name="tabLayoutMainThirdTitle">Game</string>
     <string name="tabLayoutMainFourTitle">Setting</string>
     <string name="title_1">Cool card</string>
