@@ -1,4 +1,25 @@
 package example.android.exam.examplelocal1.ui.history
 
-class HistoryFragment {
+import android.os.Bundle
+import android.view.View
+import androidx.fragment.app.viewModels
+import dagger.hilt.android.AndroidEntryPoint
+import example.android.exam.examplelocal1.databinding.FragmentHistoryBinding
+import example.android.exam.examplelocal1.ui.base.BaseFragment
+import example.android.exam.examplelocal1.ui.setting.SettingViewModel
+
+@AndroidEntryPoint
+class HistoryFragment : BaseFragment<FragmentHistoryBinding>(FragmentHistoryBinding::inflate) {
+
+    companion object {
+        fun newInstance() = HistoryFragment()
+    }
+
+    private val viewModel: SettingViewModel by viewModels()
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        viewModel
+        viewBinding
+    }
+
 }

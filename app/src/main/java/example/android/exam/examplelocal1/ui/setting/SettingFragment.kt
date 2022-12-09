@@ -10,6 +10,10 @@ import example.android.exam.examplelocal1.ui.base.BaseFragment
 @AndroidEntryPoint
 class SettingFragment : BaseFragment<FragmentSettingBinding>(FragmentSettingBinding::inflate) {
 
+    companion object {
+        fun newInstance() = SettingFragment()
+    }
+
     private val viewModel: SettingViewModel by viewModels()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

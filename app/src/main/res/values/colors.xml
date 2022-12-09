@@ -7,4 +7,35 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorBlue">#00A0D0</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGreen">#4CAF50</color>
+    <color name="colorYellow">#FFEB3B</color>
+    <color name="colorPink">#D81B60</color>
+    <color name="colorDarkGray">#6E6E6E</color>
+    <color name="colorLine">#D8D8D8</color>
+    <color name="colorTitlePractice">#18AAEC</color>
+    <color name="colorDescriptionPractice">#8D9295</color>
+    <color name="colorPracticeBackground">#8BDFEA</color>
+    <color name="colorCardBlackBackground">#DC010909</color>
+    <color name="colorBlackTopCardView">#EE1C1C1C</color>
+    <color name="colorTabNormal">#6E6E6E</color>
+    <color name="colorTabSelected">#1EBE48</color>
+
+    <!-- Chart View-->
+    <color name="colorDefaultSaleArc">#e8e8e8</color>
+    <color name="colorDefaultSaleArcStartColor">#ff2e63</color>
+    <color name="colorDefaultSaleArcEndColor">#ffcc00</color>
+    <color name="colorArcDisable">#9b9b9b</color>
+    <color name="colorTopItemEventImgEdit">#F6F6F6</color>
+    <color name="colorCalendar">#EFEFEF</color>
+    <color name="colorSaturdayText">#4C81F6</color>
+    <color name="colorLastMonth">#FCE2DFDF</color>
+
+    <color name="colorIndicatorGreen">#4CAF50</color>
+    <color name="colorIndicatorWhiteGreen">#E24CAF50</color>
 </resources>

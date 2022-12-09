@@ -2,4 +2,12 @@
     <string name="app_name">examplelocal1</string>
     <string name="fragment_setting_tv_title">This is Setting Fragment</string>
     <string name="fragment_login_tv_title">This is LoginFragment</string>
+    <string name="tabLayoutMainFirstTitle">Home</string>
+    <string name="tabLayoutMainSecondTitle">My Word</string>
+    <string name="tabLayoutMainThirdTitle">Game</string>
+    <string name="tabLayoutMainFourTitle">Setting</string>
+    <string name="title_1">Cool card</string>
+    <string name="title_2">Ok card</string>
+    <string name="title_3">Bad card</string>
+    <string name="title_4">Ugly card</string>
 </resources>
