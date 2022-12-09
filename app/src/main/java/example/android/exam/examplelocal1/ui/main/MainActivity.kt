@@ -1,4 +1,4 @@
-package example.android.exam.examplelocal1.ui.home
+package example.android.exam.examplelocal1.ui.main
 
 import android.os.Bundle
 import androidx.activity.viewModels
@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import dagger.hilt.android.AndroidEntryPoint
 import example.android.exam.examplelocal1.R
 import example.android.exam.examplelocal1.ui.extension.collectIn
-import example.android.exam.examplelocal1.ui.extension.collectInViewLifecycle
 import timber.log.Timber
 
 @AndroidEntryPoint
